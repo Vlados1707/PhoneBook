@@ -14,21 +14,24 @@ phone_book = dict()
 
 welcome()
 
-menu()
-choice = int(input("Введите режим работы: "))
+while True
+    menu()
+    choice = int(input("Введите режим работы: "))
 
-if choice == 1:
-    print((phone_book))
-elif choice == 2:
-    tel = input("Введите номер телефона: ")
-    value = input_data()
-    phone_book[tel] = value
-elif choice == 3:  # TODO Редактирование записи
-    print()
-elif choice == 4:  # TODO Удаление записи
-    print()
-elif choice == 0:  # TODO Выход
-    print()
-else:
-    print("Неправильный режим")
-print(phone_book)
+    if choice == 1:
+        print((phone_book))
+    elif choice == 2:
+        tel = input("Введите номер телефона: ")
+        value = input_data()
+        phone_book[tel] = value
+    elif choice == 3:  # TODO Редактирование записи
+        print()
+    elif choice == 4:  # TODO Удаление записи
+        print()
+    elif choice == 0:
+        print("До свидания")
+        break
+    else:
+        print("Неправильный режим")
+        continue
+
